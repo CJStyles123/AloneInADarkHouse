@@ -6,6 +6,10 @@ game:GetService("TeleportService"):Teleport(5938315346)
 return
 end
 
+pcall(function()
+game.Players.LocalPlayer.Character.Head.Nametag:Destroy()
+end)
+
 for i,v in pairs(game.Workspace:GetDescendants()) do
     if v:IsA("ClickDetector") and v:FindFirstAncestor("Button") then
         local MainModel = v:FindFirstAncestor("RewardSign")
