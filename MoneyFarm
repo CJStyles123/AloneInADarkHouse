@@ -9,7 +9,7 @@ end
 for i,v in pairs(game.Workspace:GetDescendants()) do
     if v:IsA("ClickDetector") and v:FindFirstAncestor("Button") then
         local MainModel = v:FindFirstAncestor("RewardSign")
-        if not MainModel:FindFirstChild("SkinReward") and MainModel.Amount.Value >= Money_Greater_Then then
+        if not MainModel:FindFirstChild("SkinReward") and MainModel.Amount.Value >= 1000 then
             table.insert(ButtonClickDetectors,v)
         end
     elseif v.Name == "TouchInterest" and v:FindFirstAncestor("Checkpoint") then
