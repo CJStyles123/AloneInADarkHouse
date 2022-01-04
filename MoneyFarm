@@ -39,7 +39,7 @@ while task.wait(10) do
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent:FindFirstChildOfClass("Part").CFrame
         repeat task.wait()
         fireclickdetector(v)
-        until game:GetService("Players").GuessgamesareMeh.PlayerGui.UI.Reward.Visible == true
+        until game:GetService("Players").LocalPlayer.PlayerGui.UI.Reward.Visible == true
         task.wait(2)
         for index, connection in next, getconnections(game:GetService("Players").LocalPlayer.PlayerGui.UI.Reward.OK.MouseButton1Click) do 
         connection:Fire();
